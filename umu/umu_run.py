@@ -235,6 +235,7 @@ def set_env(
     env["STEAM_COMPAT_MOUNTS"] = env["STEAM_COMPAT_TOOL_PATHS"]
 
     # Zenity
+    env["GTK_THEME"] = os.environ.get("GTK_THEME") or ""
     env["UMU_ZENITY"] = os.environ.get("UMU_ZENITY") or ""
 
     # Game drive
